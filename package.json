@@ -1,13 +1,16 @@
 {
   "name": "log-analyzer",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "log analyzer",
+  "main": "analyze.js",
+  "bin": {
+    "log-analyzer": "./analyze.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "scripts": {
+    "start": "node analyze.js",
+    "generate": "node scripts/generate-log.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }
